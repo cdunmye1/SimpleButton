@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonOnClick(View v) {
-        Button button = (Button) v;
+        Button button=(Button) v;
         button.setText("I've Been Clicked!");
+        TextView myTextView=(TextView)
+                findViewById(R.id.textView);
+        myTextView.setText("You Clicked My Button!");
     }
 
     @Override
