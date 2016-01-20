@@ -39,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
         myTextView.setText(Integer.toString(counter));
     }
 
+    public void minusButtonOnClick(View v) {
+        TextView myTextView=(TextView)
+                findViewById(R.id.textView);
+        this.counter--;
+        myTextView.setText(Integer.toString(counter));
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
